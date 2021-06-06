@@ -44,10 +44,6 @@ const NavItem = styled.a`
             
         }
 
-        &:hover{
-            font-family: tiza;
-            color: black;
-        }
 `;
 
 
@@ -64,10 +60,10 @@ const  Nav= () => {
 
                 <Logo></Logo>
                 <NavContainer>
-                    <NavItem herf="#irAboutMe" className="animate__animated animate__fadeIn animate__delay-1s">
+                    <NavItem href="#irAboutMe" className="animate__animated animate__fadeIn animate__delay-1s">
                         About Me
                     </NavItem>
-                    <NavItem className="animate__animated animate__fadeIn animate__delay-1s">
+                    <NavItem href="#irContacto" className="animate__animated animate__fadeIn animate__delay-1s">
                        Contact
                     </NavItem>   
                     <NavItem href="#irProyectos" className="animate__animated animate__fadeIn animate__delay-1s">

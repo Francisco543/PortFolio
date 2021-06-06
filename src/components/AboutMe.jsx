@@ -65,7 +65,7 @@ const AboutMe = () => {
 
     return (  
         
-            <ContainerDiv>
+            <ContainerDiv id="irAboutMe">
             <AboutmeTitulo data-aos="fade-right">About Me</AboutmeTitulo>
             <ImageDiv data-aos="fade-right"></ImageDiv>
             </ContainerDiv>

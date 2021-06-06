@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import emailjs from 'emailjs-com'
 import Aos from "aos"
 import "aos/dist/aos.css"
-
+import '../Formulario.css'
 const FormularioDiv = styled.form`
         width: 100%;
         position: absolute;
@@ -19,6 +19,13 @@ const FormularioDiv = styled.form`
         }
        
     `;
+
+const FormularioDivItem = styled.div`
+      width: 50%;
+
+`;
+
+
 const TituloFormuladio = styled.h1`
     font-size: 100px;
     font-family: 'Mate SC', serif;
@@ -39,20 +46,20 @@ const TituloFormuladio = styled.h1`
 
 const Formulario = () => {
     return ( 
-        <FormularioDiv onSubmit={enviarEmail} data-aos="fade-up">
+        <FormularioDiv id= "irContacto" onSubmit={enviarEmail} data-aos="fade-up">
             <TituloFormuladio >Contactame</TituloFormuladio>
-              <div className="mb-3">
+              <FormularioDivItem className="mb-3">
                 <label for="exampleFormControlInput1" className="form-label">Nombre</label>
                 <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Nombre" name="name"></input>
-              </div>
-              <div className="mb-3">
+              </FormularioDivItem>
+              <FormularioDivItem className="mb-3">
                 <label for="exampleFormControlInput1" className="form-label">Email address</label>
                 <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email"></input>
-              </div>
-              <div className="mb-3">
+              </FormularioDivItem>
+              <FormularioDivItem className="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mesagge"></textarea>
-              </div>
+              </FormularioDivItem>
               <button type="submit" class="btn btn-primary">Submit</button>
         </FormularioDiv>
      );
