@@ -3,18 +3,18 @@ import styled from 'styled-components'
 import Logo from './Logo'
 import DownloadCV2 from './DownloadCV2'
 import '../fonts.css'
-
+import '../nav.css'
 const NavContainer = styled.div`
        
 `
 const SourceContainer = styled.div`
     width: 100%;
-    position:absolute;  
+    position:fixed;  
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 250px;
-
+    z-index: 100000;
     @media (max-width: 1441px){
            height: 200px;
             
@@ -53,6 +53,12 @@ const NavItem = styled.a`
 
 
 const  Nav= () => {
+
+    window.addEventListener("scroll", function(){
+        var header = document.getElementById("Nav");
+        header.classList.toggle("sticky", window.scrollY)
+    })
+
     return ( 
                 <SourceContainer id="Nav">
 
