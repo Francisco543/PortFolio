@@ -6,8 +6,6 @@ import "aos/dist/aos.css"
 import yoImg from './assets/linkedin.jpg'
 import Descripcion from './Descripcion'
 
-
-
 const ContainerDiv = styled.div`
     display: flex;
     flex-direction: row;
@@ -46,9 +44,7 @@ const [text, setText] = useState("Mi nombre es Francisco, tengo 20 años, vivo e
     useEffect(()=>{
         Aos.init({duration: 2000})
     },[]);
-
-    return (  
-        
+    return (      
             <ContainerDiv id="irAboutMe">
                 <Containerli1>
                     <AboutmeTitulo data-aos="fade-right">About Me</AboutmeTitulo>
@@ -56,14 +52,8 @@ const [text, setText] = useState("Mi nombre es Francisco, tengo 20 años, vivo e
                 </Containerli1>
                 <ContainerDescripcion>
                    <Descripcion text={text}></Descripcion> 
-                </ContainerDescripcion>
-                
-            </ContainerDiv>
-                
-        
-        
-        
+                </ContainerDescripcion>            
+            </ContainerDiv> 
     );
 }
- 
 export default AboutMe;

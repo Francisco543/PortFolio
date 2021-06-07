@@ -73,11 +73,9 @@ const Main = () => {
                     Hello,<br/>Im Francisco
                 </MainParagraph> 
                 <MainFlecha className="animate__animated animate__fadeIn animate__delay-3s"></MainFlecha> 
-                <Developer className="animate__animated animate__fadeIn animate__flash animate__delay-2s ">Full Stack <br/>Java Developer</Developer>
-                
+                <Developer className="animate__animated animate__fadeIn animate__flash animate__delay-2s ">Full Stack <br/>Java Developer</Developer> 
             </MainDiv>
-        
-        
+           
     );
 }
  

@@ -43,7 +43,6 @@ const FlexDiv = styled.div`
 `;
 const FlexItem = styled.div`
     display: flex;  
-    
     width: 29%;
     margin: 30px;
     text-align: center;

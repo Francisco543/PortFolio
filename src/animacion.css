@@ -6,28 +6,18 @@
         width: 0;
     } 
 }
-
-.contenedor{
-    
-    
-    
+.contenedor{    
     border-radius: 15px;
     
 }
 @media (max-width: 1441px){
-   .contenedor{
-   
-   }
-     
- }
- 
-
-
+   .contenedor{ 
+   }     
+ } 
 .ml2 {
     font-weight: 900;
     font-size: 3.5em;
-  }
-  
+  } 
   .ml2 .letter {
     display: inline-block;
     line-height: 1em;
@@ -36,10 +26,7 @@ h1{
     float: left;
     color: #ffffff;
     position: relative;
-    font-family: 'Geo', sans-serif;
-
-    
-     
+    font-family: 'Geo', sans-serif;    
 }
 h1 span{
     position: absolute;
