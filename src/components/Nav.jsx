@@ -4,15 +4,13 @@ import Logo from './Logo'
 import DownloadCV2 from './DownloadCV2'
 import '../fonts.css'
 import '../nav.css'
-const NavContainer = styled.div`
-       
-`
+
 const SourceContainer = styled.div`
-    width: 100%;
-    position:fixed;  
+    width: 100%;  
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 250px;
     z-index: 100000;
     @media (max-width: 1441px){
@@ -36,11 +34,11 @@ const NavItem = styled.a`
     cursor: pointer;
     text-decoration: none;
     @media (max-width: 1441px){
-           padding-right: 40px;
+          
            
         }
         @media (max-width: 820px){
-           height: 100px;
+           
             
         }
 
@@ -59,7 +57,7 @@ const  Nav= () => {
                 <SourceContainer id="Nav">
 
                 <Logo></Logo>
-                <NavContainer>
+                
                     <NavItem href="#irAboutMe" className="animate__animated animate__fadeIn animate__delay-1s">
                         About Me
                     </NavItem>
@@ -69,7 +67,7 @@ const  Nav= () => {
                     <NavItem href="#irProyectos" className="animate__animated animate__fadeIn animate__delay-1s">
                        Proyectos
                     </NavItem>  
-                </NavContainer>
+               
 
                     <DownloadCV2></DownloadCV2>
                   

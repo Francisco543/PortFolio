@@ -8,6 +8,7 @@ const WaveFooter = () => {
     return ( 
         <Wave fill='#1a0f0f'
         paused={false}
+
         options={{
           height: 350,
           amplitude: 20,

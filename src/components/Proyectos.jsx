@@ -9,13 +9,12 @@ import "aos/dist/aos.css"
 const ProyectContainer = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    position: absolute;
-    margin-top: 1700px;
     justify-content: center;
+    align-items: center;
     @media (max-width: 1441px){
-           margin-top: 1500px;
+           
         }
 `;
 
@@ -32,18 +31,20 @@ const ProyectP = styled.p`
 `;
 
 const FlexDiv = styled.div`
-    position: absolute;
-    margin-top: 250px;
+
     display: flex;
-    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
     height: 500px;
     opacity: 0.8;
     padding: 20px;
-    justify-content: center;
+    justify-content: space-around;
 `;
 const FlexItem = styled.div`
     display: flex;  
-    width: 1000px;
+    
+    width: 29%;
     margin: 30px;
     text-align: center;
     font-size: 30px;
@@ -53,6 +54,8 @@ const FlexItem = styled.div`
     background-size: cover;
     background-image : url(${img1}) ;
     background-position: center;
+
+
 `
 const FlexP = styled.p`
     color: #ffffff;

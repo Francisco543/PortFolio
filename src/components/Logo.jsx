@@ -7,16 +7,16 @@ const Nombre = styled.h1`
     color:#ffffff;
     font-family: 'Cinzel', serif;
     font-size: 100px;
-    margin-left: 150px;
+    
 
     @media (max-width: 1441px){
            font-size: 80px;
-           margin-left: 100px;
+          
             
         }
         @media (max-width: 820px){
             font-size: 60px;
-            margin-left: 40px;
+           
             
         }
 `;

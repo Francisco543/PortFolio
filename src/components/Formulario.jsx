@@ -7,14 +7,13 @@ import "aos/dist/aos.css"
 import '../Formulario.css'
 const FormularioDiv = styled.form`
         width: 100%;
-        position: absolute;
-        margin-top: 2700px;
+        height: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
         
         @media (max-width: 1441px){
-            margin-top: 2350px;
+          
             
         }
        

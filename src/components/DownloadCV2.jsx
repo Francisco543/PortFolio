@@ -15,7 +15,7 @@ const DownloadButton = styled.button`
     color:#130c0c;
     text-align:center;
     transition: all 0.2s;
-    margin-right: 150px;
+    
 
     &:hover{
         opacity: 0.5;

@@ -1,52 +1,77 @@
 import React from 'react'
 import styled from 'styled-components'
-import logoInsta from '../components/assets/logoInsta.png'
-import logoWpp from '../components/assets/logoWpp.png'
-import logoGit from '../components/assets/logoGit.png'
-import '../imagenes.css'
 
-const FooterDiv = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background-color: #1a0f0f;
-    margin-top: 3300px;
+const FooterContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    background-color: #18111181;
+    height: 150px;
+    align-items: center;
     justify-content: space-around;
-    @media (max-width: 1441px){
-            margin-top: 2900px;
-            width: 100%;
-        }
-
 `;
 
-const FooterElement = styled.div`    
-        justify-items:center;
-        
+const UlDiv= styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    list-style: none;
+    
 `;
 
-const TituloFooter = styled.h1`
-    font-family: 'Geo', sans-serif;
-    font-size: 70px;
-    color: #ffffff;
-`;
+const FooterItemT = styled.h1`
+    color:#eeebe7;
+    font-family: 'Montserrat', sans-serif;
+    
+`
 
+const FooterItem = styled.ul`
+    list-style: none; 
+    padding: 0;
+    margin-top: 10px;
+    color:#eeebe7;
+    font-family: 'Montserrat', sans-serif;
+`
+const Item = styled.li`
+  
+`
 const Footer = () => {
-    return (
-        <FooterDiv>
+    return ( 
+        <FooterContainer>
+             <UlDiv>
+                 <FooterItemT>Direccion</FooterItemT>
+                    <span class="material-icons-outlined">
+                        room
+                    </span>
+                <FooterItem>
+                    <Item>Buenos Aires, Capital Federal</Item>
+                </FooterItem>
+             </UlDiv>
+             <UlDiv>
+                 <FooterItemT>Mail</FooterItemT>
+                    <span class="material-icons-outlined">
+                        email
+                    </span>
+                <FooterItem>
+                    <Item>franciscopalomeque13@gmail.com</Item>
+                </FooterItem>
+             </UlDiv>
+             <UlDiv>
+                 <FooterItemT>Whatsapp</FooterItemT>
+                    <span class="material-icons-outlined">
+                        smartphone
+                    </span> 
+                <FooterItem>
+                    <Item>+54 9 1151104778</Item>
+                </FooterItem>
+             </UlDiv>
             
-            <FooterElement><TituloFooter>Instagram</TituloFooter></FooterElement>
-            <FooterElement><TituloFooter>Github</TituloFooter></FooterElement>
-            <FooterElement><TituloFooter>Linkedin</TituloFooter></FooterElement>
-        </FooterDiv>
-       
-      );
+        </FooterContainer>
 
-    }
+     );
+}
  
 export default Footer;
-
-
